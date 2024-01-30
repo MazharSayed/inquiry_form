@@ -55,6 +55,14 @@ If the optional challenge is completed, document the functionality of the dashbo
         DB_PASSWORD=
         ```
     - Save the changes in the `.env` file.
+
+    **Import Database Dump:**
+    - Access PHPMyAdmin (usually at `http://localhost/phpmyadmin/`).
+    - Select the database (`nestify_task_db`) in the left sidebar.
+    - Click on the "Import" tab in the top menu.
+    - Choose the `nestify_task_db.sql` file using the file input or drag-and-drop.
+    - Click the "Go" or "Import" button to execute the SQL file and populate the database with tables and data.
+    
 7. **Mailtrap Configuration:**
     - Sign up for a free Mailtrap account: [Mailtrap Signup](https://mailtrap.io/)
     - In your Mailtrap inbox, find your SMTP credentials (Host, Port, Username, Password).
