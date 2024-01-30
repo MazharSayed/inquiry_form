@@ -124,16 +124,7 @@
                                 <a href="{{ route('inquiry.list')}}">
                                     <i class="fa fa-user-alt metismenu-icon" aria-hidden="true"></i>
                                    Inquiry Users
-                                    {{-- <i class="fa fa-caret-down metismenu-state-icon" aria-hidden="true"></i> --}}
                                 </a>
-                                {{-- <ul>
-                                    <li>
-                                        <a href="">
-                                            <i class="metismenu-icon">
-                                            </i>All Inquiry Users
-                                        </a>
-                                    </li>
-                                </ul> --}}
                             </li>
                         </ul>
                     </div>
@@ -143,12 +134,8 @@
                 <div class="app-main__inner">
             @yield('content')
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>

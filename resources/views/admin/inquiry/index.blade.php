@@ -3,19 +3,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
 <div class="app-page-title">
-    {{-- <div class="page-title-wrapper">
-        <div class="page-title-heading">
-            <div class="page-title-icon">
-               <i class="fas fa-list-alt    "></i>
-            </div>
-            <div>All Inquiry
-                <div class="page-title-subheading">You can add,remove, edit product here.
-                </div>
-            </div>
-        </div>
-
-</div> --}}
-        <div class="row">
+    <div class="row">
     <div class="col-lg-12">
         <div class="main-card mb-3 card">
             @include('partials.alert')
@@ -40,7 +28,6 @@
                     <tbody>
                         <?php $i=1?>
                         @foreach ($inquiries as $row)
-
                                     <tr>
                                         <td scope="row">{{$i++}}</td>
                                         <td>{{$row->name}}</td>
@@ -53,7 +40,6 @@
                                          </td>
                                     </tr>
                                     @endforeach
-
                     </tbody>
                 </table>
             </div>
