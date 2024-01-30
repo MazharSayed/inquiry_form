@@ -43,7 +43,19 @@ If the optional challenge is completed, document the functionality of the dashbo
 3. Set up the environment: `cp .env.example .env`
 4. Generate application key: `php artisan key:generate`
 5. Configure the database in the `.env` file.
-6. **Mailtrap Configuration:**
+    **Database Configuration:**
+    - Create a new MySQL database for the project in phpmyadmin (e.g., `nestify_task_db`).
+    - Open the `.env` file and update the following variables with your database credentials:
+        ```env
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=nestify_task_db
+        DB_USERNAME=root
+        DB_PASSWORD=
+        ```
+    - Save the changes in the `.env` file.
+7. **Mailtrap Configuration:**
     - Sign up for a free Mailtrap account: [Mailtrap Signup](https://mailtrap.io/)
     - In your Mailtrap inbox, find your SMTP credentials (Host, Port, Username, Password).
     - Update the following variables in the `.env` file with your Mailtrap credentials:
@@ -63,8 +75,8 @@ If the optional challenge is completed, document the functionality of the dashbo
         MAIL_PASSWORD=your_mailtrap_password
         MAIL_ENCRYPTION=tls
 
-7. Run migrations (if applicable): `php artisan migrate`
-8. Serve the application: `php artisan serve`
+8. Run migrations (if applicable): `php artisan migrate`
+9. Serve the application: `php artisan serve`
 
 ## Functionality
 
